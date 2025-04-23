@@ -1,0 +1,1 @@
+export { FavoriteCardView  as FavoriteCard } from './favoriteCardView'
