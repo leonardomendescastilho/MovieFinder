@@ -9,7 +9,7 @@ export const FavoriteCardView = ({ movie, onRemove }: favoriteCardProps) => {
 			className="max-w-[15rem] sm:max-w-xs mx-auto h-auto max-h-[400px] flex flex-col p-4 transition-all duration-300 ease-in-out group border rounded hover:shadow-2xl hover:border-foreground/50 focus-within:ring-1 focus-within:ring-primary relative"
 			aria-labelledby={`movie-title-${movie.imdbID}`}
 		>
-			<div className="absolute top-30 right-2 sm:right-4 sm:top-4  z-[10000] px-2 py-1 sm:px-4 sm:py-1 bg-chart-4 rounded">
+			<div className="absolute right-4  z-[10000] px-2 py-1 sm:px-4 sm:py-1 bg-chart-4 rounded">
 				<span className="flex gap-1 items-center font-semibold  text-sm md:text-base/6  tracking-tighter">
 					<Star
 						size={16}
