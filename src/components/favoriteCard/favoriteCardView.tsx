@@ -1,6 +1,5 @@
 import { Star } from 'lucide-react';
 import { Button } from '../button';
-import { CardRating } from '../modalCard/cardRating';
 import { favoriteCardProps } from './favoriteCardModel';
 
 export const FavoriteCardView = ({ movie, onRemove }: favoriteCardProps) => {
