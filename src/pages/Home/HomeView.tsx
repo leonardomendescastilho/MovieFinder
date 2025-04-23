@@ -105,7 +105,7 @@ export const HomeView = () => {
 							<ErrorMessage
 								error={error}
 								errorMessage={`Erro ao buscar filme: ${error.message}`}
-								duration={500000}
+								duration={3000}
 							/>
 						)}
 					</div>
