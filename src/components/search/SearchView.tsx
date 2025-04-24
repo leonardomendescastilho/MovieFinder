@@ -25,17 +25,27 @@ export const SearchView = ({
 		>
 			<div className="flex flex-col md:flex-row w-full items-center gap-2 ">
 				<div className="w-[80%] md:w-[70%]">
-				<label htmlFor="movie-name" className="sr-only">Nome do filme</label>
+					<label
+						htmlFor="movie-name"
+						className="sr-only"
+					>
+						Nome do filme
+					</label>
 					<Input
-					  id="movie-name"
+						id="movie-name"
 						{...register('name', { required: true })}
-						placeholder={'Digite o nome do filme'}
+						placeholder={'Digite o nome do filme em inglês'}
 						required
 						align="center"
 					/>
 				</div>
 				<div className="w-[30%] md:w-[100px]">
-					<label htmlFor="movie-year" className="sr-only">Ano (Opcional)</label>
+					<label
+						htmlFor="movie-year"
+						className="sr-only"
+					>
+						Ano (Opcional)
+					</label>
 					<Input
 						id="movie-year"
 						{...register('year', {
@@ -48,13 +58,13 @@ export const SearchView = ({
 			</div>
 
 			<Button
-        disabled={isLoading}
-        text={isLoading ? "Pesquisando..." : "Pesquisar"}
-        variant="search"
-        icon="search"
-        type="submit"
-        aria-busy={isLoading}
-      />
+				disabled={isLoading}
+				text={isLoading ? 'Pesquisando...' : 'Pesquisar'}
+				variant="search"
+				icon="search"
+				type="submit"
+				aria-busy={isLoading}
+			/>
 		</form>
 	);
 };

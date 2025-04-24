@@ -7,7 +7,7 @@ import { CardRating } from '../cardRating/';
 
 export const CardContentView = ({ data }: CardContentProps) => {
 	return (
-		<div className="flex flex-col items-center justify-around h-full relative p-6 group ">
+		<div className="flex flex-col items-center justify-around h-full relative p-6 gap-1 sm:gap-3 group">
 			<CardRating imdbRating={data.imdbRating} />
 			<CardPoster
 				Poster={data.Poster}

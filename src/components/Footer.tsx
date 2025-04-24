@@ -4,9 +4,9 @@ export const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="border-t w-full py-4 text-xs md:text-sm shrink-0">
-			<div className="container mx-auto flex flex-col  items-center  justify-between md:justify-center px-4 md:gap-4">
-				<p className="mb-2 md:mb-0">
+		<footer className="border-t w-full md:pt-2 text-xs md:text-sm shrink-0">
+			<div className="container mx-auto flex md:flex-col items-center  justify-center px-4 md:gap-1">
+				<p className="md:mb-0">
 					<span aria-label="Copyright">&copy;</span> {currentYear} Leonardo
 					Mendes de Castilho
 				</p>
