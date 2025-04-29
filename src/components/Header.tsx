@@ -1,15 +1,18 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../public/logo.png';
 
 export const Header = () => {
 	return (
 		<header className="flex w-full max-w-7xl mx-auto items-center justify-between py-2 px-6 border-b shrink-0">
 			<div className="hidden sm:block text-sm">
+				<Link to="/">
+				
 				<img
 					className="h-10"
 					src={Logo}
 					alt="Logo do site Movie"
 				/>
+				</Link>
 			</div>
 
 			<nav
