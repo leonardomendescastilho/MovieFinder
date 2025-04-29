@@ -1,5 +1,12 @@
 # MovieFinder
 
+## 🌐 Demonstração ao Vivo
+
+Experimente o MovieFinder em ação! Visite o site ao vivo:  
+👉 [MovieFinder](https://leonardomendescastilho.github.io/MovieFinder/)
+
+---
+
 ## 📚 Por Que Este Projeto?
 
 O MovieFinder é mais do que um simples aplicativo de busca de filmes — é uma vitrine das minhas habilidades em construir aplicações web modernas e centradas no usuário. Ao implementar a arquitetura MVVM e utilizar um stack tecnológico robusto, criei um projeto escalável e manutenível que destaca:
@@ -92,12 +99,7 @@ Siga estas etapas para executar o MovieFinder localmente:
 
 ---
 
-## 🌐 Demonstração ao Vivo
 
-Experimente o MovieFinder em ação! Visite o site ao vivo:  
-👉 [MovieFinder](https://leonardomendescastilho.github.io/MovieFinder/)
-
----
 
 
 ## 📝 Licença
