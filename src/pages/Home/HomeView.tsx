@@ -20,6 +20,7 @@ export const HomeView = () => {
 		movieData,
 		error,
 	} = useHomeViewModel();
+
 	return (
 		<>
 			<Helmet>

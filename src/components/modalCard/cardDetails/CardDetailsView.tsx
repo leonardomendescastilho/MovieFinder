@@ -10,27 +10,27 @@ export const CardDetailsView = ({
 	Writer,
 	Actors,
 }: CardDetailsProps) => (
-	<div className="flex gap-4  flex-col  text-xs md:text-sm font-base font-semibold tracking-tighter justify-between">
-		<div className="flex flex-col gap-1">
-			<p className="flex gap-1 text-primary">
-				Director:
-				<span className="text-secondary-foreground text-wrap">{Director}</span>
+	// <div className="flex gap-4  flex-col  text-xs md:text-sm font-base font-semibold tracking-tighter justify-between">
+	<div className="text-primary font-semibold tracking-tighter text-pretty">
+		<div className="flex flex-col mb-2 space-y-0">
+			<p className='flex place-items-baseline gap-1 text-sm font-semibold'>
+				Director:{''}
+				<span className="text-muted-foreground text-wrap text-xs md:text-sm tracking-tighter">{Director}</span>
 			</p>
-			<p className="flex gap-1 text-primary">
-				Writers:
-				<span className="text-secondary-foreground text-wrap">{Writer}</span>
+			<p className='flex place-items-baseline gap-1 text-sm font-semibold'>
+				Writers:{''}
+				<span className="text-muted-foreground text-wrap text-xs md:text-sm tracking-tighter">{Writer}</span>
 			</p>
 		</div>
 
 		<div className="flex flex-col gap-1">
 			<p className="flex items-center gap-1">
 				<Clapperboard
-					className="text-primary"
-					size={15}
+					size={16}
 				/>
 				{Genre.split(',').map((genre, index, array) => {
 					return (
-						<span key={genre}>
+						<span key={genre} className='text-wrap text-center font-base text-xs md:text-sm text-muted-foreground tracking-tighter'>
 							{genre.trim()}
 							{index < array.length - 1 && ', '}
 						</span>
@@ -39,42 +39,36 @@ export const CardDetailsView = ({
 			</p>
 			<p className="flex items-center gap-1">
 				<Hourglass
-					className="text-primary"
-					size={15}
+					size={16}
 				/>
-				<span>{Runtime}</span>
+				<span className='text-wrap text-center font-base text-xs md:text-sm text-muted-foreground tracking-tighter'>{Runtime}</span>
 			</p>
-			<p className="flex items-center gap-1 text-xs md:text-sm font-base font-semibold tracking-tighter ">
+			<p className="flex items-center gap-1 text-xs md:text-sm font-base font-semibold tracking-tighter">
 				<Award
-					className="text-primary"
-					size={15}
+					size={16}
 				/>
-				<span>{Awards}</span>
+				<span className='text-wrap text-center font-base text-xs md:text-sm text-muted-foreground tracking-tighter'>{Awards}</span>
 			</p>
 			<p className="flex items-center gap-1">
 				<Calendar
-					className="text-primary"
-					size={15}
+					size={16}
 				/>
-				<span>{Released}</span>
+				<span className='text-wrap text-center font-base text-xs md:text-sm text-muted-foreground tracking-tighter'>{Released}</span>
 			</p>
 
-			<div className="flex gap-1 items-center">
-				<p>
+				<p className='flex items-center gap-1 text-xs md:text-sm font-base font-semibold tracking-tighter'>
 					<Cast
-						className="text-primary"
-						size={15}
+						size={16}
 					/>
-				</p>
 				{Actors.split(',').map((actor, index, array) => {
 					return (
-						<span key={actor}>
+						<span key={actor} className='text-wrap text-center font-base text-xs md:text-sm text-muted-foreground tracking-tighter'>
 							{actor.trim()}
 							{index < array.length - 1 && ', '}
 						</span>
 					);
 				})}
-			</div>
+				</p>
 		</div>
 	</div>
 );

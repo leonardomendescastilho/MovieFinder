@@ -9,7 +9,7 @@ export const App = () => {
 		<QueryClientProvider client={queryClient}>
 			<FavoritesContextProvider>
 				<Toaster
-					// richColors
+				
 					duration={1000}
 					position="top-center"
 				/>

@@ -7,12 +7,10 @@ export const CardFooterView = ({
 }: CardFooterProps) => {
 	const { handleAddMovieToFavorite } = useCardFooterViewModel({ data });
 	return (
-		<div className="flex">
 			<Button
 				onClick={handleAddMovieToFavorite}
 				icon={'favorite'}
 				text={'Adicionar aos Favoritos'}
 			/>
-		</div>
 	);
 };
