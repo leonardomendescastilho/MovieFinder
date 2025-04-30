@@ -3,7 +3,7 @@ import { MovieDataRequest, MovieDataResponse } from './type';
 
 export const getMovie = async ({ movieName, movieYear }: MovieDataRequest) => {
 	try {
-		const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
+		const API_KEY = '4535500f';
 
 		const params = new URLSearchParams({
 			t: movieName,
