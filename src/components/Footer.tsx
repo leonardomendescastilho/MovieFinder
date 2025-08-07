@@ -14,7 +14,7 @@ export const Footer = () => {
 					<ul className="flex">
 						<li>
 							<Link
-								to="https://portfolio-navy-seven-34.vercel.app/"
+								to="https://portifolio-rosy-one-97.vercel.app/"
 								className="text-primary font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-1"
 								target="_blank"
 								rel="noopener noreferrer"
